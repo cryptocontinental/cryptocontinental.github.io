@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "Geist";
+  src: url("fonts/Geist-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("fonts/Geist-Italic-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("fonts/GeistMono-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monsieur La Doulaise";
+  src: url("fonts/MonsieurLaDoulaise-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Liu Jian Mao Cao";
+  src: url("fonts/LiuJianMaoCao-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ma Shan Zheng";
+  src: url("fonts/MaShanZheng-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #F7F4EF;
+  --ink: #161412;
+  --muted: #6F6A64;
+  --quiet: #8A847C;
+  --line: #DDD6CC;
+  --rose: #B76E79;
+  --field: #FFFcf8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Geist, "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Inter, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a { color: var(--ink); text-underline-offset: 3px; }
+a:hover { color: var(--rose); }
+
+.page {
+  width: min(720px, calc(100% - 48px));
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0 72px;
+}
+
+.site-header {
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--ink);
+  gap: 2px;
+}
+
+.brand:hover { color: var(--ink); }
+
+.logo {
+  display: block;
+  width: min(260px, 72%);
+  height: auto;
+  margin: 0 auto 12px;
+}
+
+.wordmark {
+  display: block;
+  font-weight: 500;
+  font-size: 1.18rem;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: var(--ink);
+  padding-bottom: 0;
+}
+
+.motto {
+  display: block;
+  margin-top: 2px;
+  font-family: "Monsieur La Doulaise", "Tangerine", cursive;
+  font-weight: 400;
+  font-size: 1.85rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.wordmark:hover { color: var(--ink); }
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 22px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  font-size: 0.92rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--muted);
+  padding: 4px 0 7px;
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
+}
+
+.nav a:hover { color: var(--ink); }
+
+.nav a.active {
+  color: var(--ink);
+  border-bottom-color: var(--rose);
+}
+
+main { flex: 1; }
+
+.hero {
+  padding: 28px 0 8px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-size: clamp(1.55rem, 3vw, 1.95rem);
+  line-height: 1.4;
+  letter-spacing: -0.04em;
+  max-width: 22em;
+  margin: 0 auto;
+}
+
+.hero .shine {
+  display: block;
+  margin-top: 0.7em;
+  font-style: italic;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 40px 0 18px;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 13px 22px;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+  min-width: 240px;
+  text-align: center;
+  background: transparent;
+  font-weight: 400;
+}
+
+.cta:hover {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.intro, .about, .thanks {
+  font-weight: 400;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  max-width: 40em;
+}
+
+.intro { margin: 8px auto 36px; }
+
+.page-title {
+  font-weight: 500;
+  font-size: 1.85rem;
+  letter-spacing: -0.05em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form { display: grid; gap: 22px; }
+
+.field label {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.req { color: var(--rose); }
+.opt {
+  color: var(--quiet);
+  font-size: 0.85em;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-family: Geist, "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Inter, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  padding: 8px 0 10px;
+  border-radius: 0;
+  outline: none;
+  resize: vertical;
+}
+
+.field textarea { min-height: 96px; }
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom-color: var(--rose);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #B4AFA8;
+}
+
+.actions { margin-top: 8px; text-align: center; }
+
+button.submit {
+  appearance: none;
+  cursor: pointer;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 13px 36px;
+  font-family: Geist, "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Inter, system-ui, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+button.submit:hover { background: #2a2624; }
+
+button.submit:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.form-error {
+  text-align: center;
+  color: #8A3B3B;
+  margin-top: 16px;
+}
+
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.thanks {
+  text-align: center;
+  margin: 48px auto;
+}
+
+.about p { margin: 0 0 1.1em; }
+.about p:last-child { margin-bottom: 0; }
+
+.site-footer {
+  text-align: center;
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  font-size: 0.88rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.footer-links a:hover { color: var(--rose); }
+
+.privacy, .tip { max-width: 40em; margin: 0 auto 12px; }
+
+.eth {
+  display: block;
+  margin-top: 6px;
+  font-family: "Geist Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  color: var(--ink);
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.eth:hover { color: var(--rose); }
+
+@media (max-width: 640px) {
+  .page { width: calc(100% - 36px); padding: 32px 0 56px; }
+  .nav { gap: 1.3rem; }
+  .cta { min-width: 100%; }
+  .hero h1 { font-size: 1.4rem; }
+}
+
+/* lang switcher */
+
+
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.lang-switch button {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  padding: 2px 0 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.88rem;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+}
+
+.lang-switch button:hover { color: var(--ink); }
+.lang-switch button.active {
+  color: var(--ink);
+  border-bottom-color: var(--rose);
+}
+
+html[data-lang="zh"] body {
+  font-size: 16.5px;
+  line-height: 1.8;
+}
+
+html[data-lang="zh"] .hero h1,
+html[data-lang="zh"] .intro,
+html[data-lang="zh"] .about,
+html[data-lang="zh"] .thanks,
+html[data-lang="zh"] .page-title {
+  letter-spacing: 0.04em;
+  line-height: 1.75;
+  word-break: keep-all;
+  line-break: strict;
+}
+
+html[data-lang="zh"] .page-title {
+  font-weight: 400;
+  letter-spacing: 0.18em;
+}
+
+html[data-lang="zh"] .wordmark {
+  letter-spacing: 0.18em;
+  font-weight: 400;
+}
+
+html[data-lang="zh"] .motto {
+  font-family: "Liu Jian Mao Cao", "Ma Shan Zheng", cursive;
+  font-size: 1.85rem;
+  letter-spacing: 0.08em;
+  line-height: 1.55;
+  margin-top: 4px;
+}

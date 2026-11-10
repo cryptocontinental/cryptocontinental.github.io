@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title="title_open">crypto john wick</title>
+  <meta name="description" content="a free, personal introduction between crypto talent and the teams they may get along with. by crypto john wick.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="lang.js" defer></script>
+  <script src="form.js" defer></script>
+</head>
+<body data-i18n-title="title_open">
+  <div class="page">
+    <header class="site-header">
+      <div class="lang-switch" role="group" aria-label="language">
+        <button type="button" data-set-lang="en">en</button>
+        <button type="button" data-set-lang="zh">中文</button>
+      </div>
+      <a class="brand" href="index.html">
+        <img class="logo" src="logo.png" width="280" height="229" alt="">
+        <span class="wordmark" data-i18n="wordmark">welcome to the continental</span>
+        <span class="motto" data-i18n="motto">i have served. and i will be of service</span>
+      </a>
+      <hr class="rule">
+      <nav class="nav" aria-label="primary">
+        <a href="open-table.html" class="active" aria-current="page" data-i18n="nav_open">open table</a>
+        <a href="right-room.html" data-i18n="nav_room">right room</a>
+        <a href="about.html" data-i18n="nav_about">about</a>
+      </nav>
+      <hr class="rule">
+    </header>
+    <main>
+
+      <h1 class="page-title" data-i18n="open_title">open table</h1>
+      <p class="intro" data-i18n="open_intro">write in your own words. be clear. you don&rsquo;t need a formal resume.</p>
+      <form id="talent-form" action="#" method="post">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="t-name">1. <span data-i18n="t1"></span> <span class="req">*</span></label>
+          <input id="t-name" name="name" type="text" required data-i18n-placeholder="t1_ph">
+        </div>
+        <div class="field">
+          <label for="t-contact">2. <span data-i18n="t2"></span> <span class="req">*</span></label>
+          <input id="t-contact" name="contact" type="text" required data-i18n-placeholder="t2_ph">
+        </div>
+        <div class="field">
+          <label for="t-location">3. <span data-i18n="t3"></span> <span class="opt" data-i18n="optional">(optional)</span></label>
+          <textarea id="t-location" name="location"></textarea>
+        </div>
+        <div class="field">
+          <label for="t-good_at">4. <span data-i18n="t4"></span> <span class="req">*</span></label>
+          <textarea id="t-good_at" name="good_at" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-interest">5. <span data-i18n="t5"></span> <span class="req">*</span></label>
+          <textarea id="t-interest" name="interest" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-explore">6. <span data-i18n="t6"></span> <span class="req">*</span></label>
+          <textarea id="t-explore" name="explore" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-better">7. <span data-i18n="t7"></span> <span class="req">*</span></label>
+          <textarea id="t-better" name="better" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-goals">8. <span data-i18n="t8"></span> <span class="req">*</span></label>
+          <textarea id="t-goals" name="goals" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-message">9. <span data-i18n="t9"></span> <span class="req">*</span></label>
+          <textarea id="t-message" name="message" required></textarea>
+        </div>
+        <div class="field">
+          <label for="t-else">10. <span data-i18n="t10"></span> <span class="opt" data-i18n="optional">(optional)</span></label>
+          <textarea id="t-else" name="else"></textarea>
+        </div>
+        <div class="actions"><button class="submit" type="submit" data-i18n="send">send</button></div>
+      </form>
+      <p class="thanks" id="talent-thanks" hidden data-i18n="thanks_talent">thank you. i&rsquo;ll read this myself. if it feels like a real connection, i&rsquo;ll reach out first.</p>
+    </main>
+    <footer class="site-footer">
+      <hr class="rule">
+      <div class="footer-links">
+        <a href="about.html" data-i18n="footer_about">about</a>
+        <a href="https://x.com/johnwickyeeah" target="_blank" rel="noopener noreferrer" data-i18n="footer_twitter">twitter</a>
+        <a href="mailto:johnwickcrypto@outlook.com">johnwickcrypto@outlook.com</a>
+      </div>
+      <p class="privacy" data-i18n="privacy">what you share is confidential. it goes only to my mailbox, and i will ask you before i make an introduction.</p>
+      <p class="tip"><span data-i18n="tip">if you like what i do and would like to support, you can tip eth.</span>
+        <a class="eth" href="https://etherscan.io/address/0x17D2274071641b2036844Fb4a931fd66aC1e6807" target="_blank" rel="noopener noreferrer">0x17D2274071641b2036844Fb4a931fd66aC1e6807</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

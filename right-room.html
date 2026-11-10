@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title="title_room">crypto john wick</title>
+  <meta name="description" content="a free, personal introduction between crypto talent and the teams they may get along with. by crypto john wick.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="lang.js" defer></script>
+  <script src="form.js" defer></script>
+</head>
+<body data-i18n-title="title_room">
+  <div class="page">
+    <header class="site-header">
+      <div class="lang-switch" role="group" aria-label="language">
+        <button type="button" data-set-lang="en">en</button>
+        <button type="button" data-set-lang="zh">中文</button>
+      </div>
+      <a class="brand" href="index.html">
+        <img class="logo" src="logo.png" width="280" height="229" alt="">
+        <span class="wordmark" data-i18n="wordmark">welcome to the continental</span>
+        <span class="motto" data-i18n="motto">i have served. and i will be of service</span>
+      </a>
+      <hr class="rule">
+      <nav class="nav" aria-label="primary">
+        <a href="open-table.html" data-i18n="nav_open">open table</a>
+        <a href="right-room.html" class="active" aria-current="page" data-i18n="nav_room">right room</a>
+        <a href="about.html" data-i18n="nav_about">about</a>
+      </nav>
+      <hr class="rule">
+    </header>
+    <main>
+
+      <h1 class="page-title" data-i18n="room_title">right room</h1>
+      <p class="intro" data-i18n="room_intro">tell me who the team actually wants to welcome.</p>
+      <form id="company-form" action="#" method="post">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+        <div class="field">
+          <label for="c-company">1. <span data-i18n="c1"></span> <span class="req">*</span></label>
+          <input id="c-company" name="company" type="text" required>
+        </div>
+        <div class="field">
+          <label for="c-name_role">2. <span data-i18n="c2"></span> <span class="req">*</span></label>
+          <input id="c-name_role" name="name_role" type="text" required>
+        </div>
+        <div class="field">
+          <label for="c-contact">3. <span data-i18n="c3"></span> <span class="req">*</span></label>
+          <input id="c-contact" name="contact" type="text" required data-i18n-placeholder="c3_ph">
+        </div>
+        <div class="field">
+          <label for="c-hiring">4. <span data-i18n="c4"></span> <span class="req">*</span></label>
+          <textarea id="c-hiring" name="hiring" required></textarea>
+        </div>
+        <div class="field">
+          <label for="c-skills">5. <span data-i18n="c5"></span> <span class="req">*</span></label>
+          <textarea id="c-skills" name="skills" required></textarea>
+        </div>
+        <div class="field">
+          <label for="c-people">6. <span data-i18n="c6"></span> <span class="req">*</span></label>
+          <textarea id="c-people" name="people" required></textarea>
+        </div>
+        <div class="field">
+          <label for="c-perks">7. <span data-i18n="c7"></span> <span class="req">*</span></label>
+          <textarea id="c-perks" name="perks" required></textarea>
+        </div>
+        <div class="field">
+          <label for="c-benefits">8. <span data-i18n="c8"></span> <span class="req">*</span></label>
+          <textarea id="c-benefits" name="benefits" required data-i18n-placeholder="c8_ph"></textarea>
+        </div>
+        <div class="field">
+          <label for="c-share">9. <span data-i18n="c9"></span> <span class="req">*</span></label>
+          <textarea id="c-share" name="share" required></textarea>
+        </div>
+        <div class="field">
+          <label for="c-else">10. <span data-i18n="c10"></span> <span class="opt" data-i18n="optional">(optional)</span></label>
+          <textarea id="c-else" name="else"></textarea>
+        </div>
+        <div class="actions"><button class="submit" type="submit" data-i18n="send">send</button></div>
+      </form>
+      <p class="thanks" id="company-thanks" hidden data-i18n="thanks_company">thank you. i&rsquo;ll read this myself. before i make an introduction, i&rsquo;ll ask both sides first.</p>
+    </main>
+    <footer class="site-footer">
+      <hr class="rule">
+      <div class="footer-links">
+        <a href="about.html" data-i18n="footer_about">about</a>
+        <a href="https://x.com/johnwickyeeah" target="_blank" rel="noopener noreferrer" data-i18n="footer_twitter">twitter</a>
+        <a href="mailto:johnwickcrypto@outlook.com">johnwickcrypto@outlook.com</a>
+      </div>
+      <p class="privacy" data-i18n="privacy">what you share is confidential. it goes only to my mailbox, and i will ask you before i make an introduction.</p>
+      <p class="tip"><span data-i18n="tip">if you like what i do and would like to support, you can tip eth.</span>
+        <a class="eth" href="https://etherscan.io/address/0x17D2274071641b2036844Fb4a931fd66aC1e6807" target="_blank" rel="noopener noreferrer">0x17D2274071641b2036844Fb4a931fd66aC1e6807</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -40,8 +40,11 @@
           <input id="t-name" name="name" type="text" required data-i18n-placeholder="t1_ph">
         </div>
         <div class="field">
-          <label for="t-contact">2. <span data-i18n="t2"></span> <span class="req">*</span></label>
-          <input id="t-contact" name="contact" type="text" required data-i18n-placeholder="t2_ph">
+          <label>2. <span data-i18n="t2"></span> <span class="req">*</span></label>
+          <label for="t-email" class="sublabel"><span data-i18n="t2_email">email</span> <span class="req">*</span></label>
+          <input id="t-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="t2_email_ph">
+          <label for="t-twitter" class="sublabel"><span data-i18n="t2_twitter">twitter handle</span> <span class="req">*</span></label>
+          <input id="t-twitter" name="twitter" type="text" required autocomplete="off" data-i18n-placeholder="t2_twitter_ph">
         </div>
         <div class="field">
           <label for="t-location">3. <span data-i18n="t3"></span> <span class="opt" data-i18n="optional">(optional)</span></label>

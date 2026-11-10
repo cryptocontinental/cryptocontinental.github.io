@@ -44,8 +44,11 @@
           <input id="c-name_role" name="name_role" type="text" required>
         </div>
         <div class="field">
-          <label for="c-contact">3. <span data-i18n="c3"></span> <span class="req">*</span></label>
-          <input id="c-contact" name="contact" type="text" required data-i18n-placeholder="c3_ph">
+          <label>3. <span data-i18n="c3"></span> <span class="req">*</span></label>
+          <label for="c-email" class="sublabel"><span data-i18n="c3_email">email</span> <span class="req">*</span></label>
+          <input id="c-email" name="email" type="email" required autocomplete="email" data-i18n-placeholder="c3_email_ph">
+          <label for="c-twitter" class="sublabel"><span data-i18n="c3_twitter">twitter handle</span> <span class="req">*</span></label>
+          <input id="c-twitter" name="twitter" type="text" required autocomplete="off" data-i18n-placeholder="c3_twitter_ph">
         </div>
         <div class="field">
           <label for="c-hiring">4. <span data-i18n="c4"></span> <span class="req">*</span></label>
